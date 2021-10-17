@@ -1,0 +1,82 @@
+body {
+  font-family: $main-font;
+  line-height: 1.6;
+  background: #fff;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: $dark-color;
+}
+img {
+  width: 100%;
+}
+
+h2,
+h3,
+h4 {
+  text-transform: uppercase;
+}
+
+.container {
+  max-width: $website-width;
+  padding: 0 1.5rem;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+%btn-shared {
+  display: inline-block;
+  padding: 0.8rem 2rem;
+  border: none;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.btn {
+  &-main {
+    @extend %btn-shared;
+    background: $main-color;
+    color: $dark-color;
+    &:hover {
+      background: $main-color;
+    }
+  }
+  &-light {
+    @extend %btn-shared;
+    background: $light-color;
+    color: $dark-color;
+    &:hover {
+      background: $main-color;
+    }
+  }
+  &-dark {
+    @extend %btn-shared;
+    background: $dark-color;
+    color: $light-color;
+    &:hover {
+      background: $main-color;
+    }
+  }
+}
+
+.s-heading {
+  font-size: 1.5rem;
+}
+.m-heading {
+  font-size: 2rem;
+}
+.l-heading {
+  font-size: 4rem;
+  line-height: 1.2;
+}
+
+.lead {
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+}
+
+.text-center {
+  text-align: center;
+}
