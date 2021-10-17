@@ -3,6 +3,7 @@
 @import "partials/functions";
 @import "partials/mixins";
 @import "partials/utilities";
+@import "partials/generals";
 
 #header {
   &-home {
@@ -10,18 +11,6 @@
     background: url("../img/showcase.jpg") no-repeat center center/cover;
     color: #fff;
     height: 100vh;
-    position: relative;
-    // padding: 0 1.5rem;
-    // &::before {
-    //     content: '';
-    //     position: absolute;
-    //     top: 0;
-    //     left: 0;
-    //     width: 100%;
-    //     height: 100%;
-    //     opacity: 0.7;
-    // }
-
     #nav-bar {
       padding-top: 1rem;
       display: flex;
@@ -54,6 +43,27 @@
     }
     #header-content {
       margin-top: 20%;
+    }
+  }
+}
+
+#home {
+  &-a {
+    color: $dark-color;
+    .bottom-line {
+      background: $main-color;
+      width: 3rem;
+      height: 2px;
+      margin: 1rem auto;
+    }
+    .specials {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-gap: 1rem;
+      padding: 1rem 0;
+    }
+    .fas {
+      color: $main-color;
     }
   }
 }

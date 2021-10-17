@@ -1,25 +1,3 @@
-body {
-  font-family: $main-font;
-  line-height: 1.6;
-  background: #fff;
-}
-ul {
-  list-style: none;
-}
-a {
-  text-decoration: none;
-  color: $dark-color;
-}
-img {
-  width: 100%;
-}
-
-h2,
-h3,
-h4 {
-  text-transform: uppercase;
-}
-
 .container {
   max-width: $website-width;
   padding: 0 1.5rem;
@@ -34,6 +12,7 @@ h4 {
   cursor: pointer;
   transition: all 0.5s;
 }
+
 .btn {
   &-main {
     @extend %btn-shared;
@@ -61,6 +40,48 @@ h4 {
   }
 }
 
+.lead {
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+// Paddings
+.py {
+  &-1 {
+    padding: 1rem 0;
+  }
+  &-2 {
+    padding: 2rem 0;
+  }
+  &-3 {
+    padding: 3rem 0;
+  }
+  &-4 {
+    padding: 4rem 0;
+  }
+}
+
+// Margins
+.my {
+  &-1 {
+    margin: 1rem 0;
+  }
+  &-2 {
+    margin: 2rem 0;
+  }
+  &-3 {
+    margin: 3rem 0;
+  }
+  &-4 {
+    margin: 4rem 0;
+  }
+}
+
+// Headings
 .s-heading {
   font-size: 1.5rem;
 }
@@ -70,13 +91,4 @@ h4 {
 .l-heading {
   font-size: 4rem;
   line-height: 1.2;
-}
-
-.lead {
-  font-size: 1.3rem;
-  margin-bottom: 2rem;
-}
-
-.text-center {
-  text-align: center;
 }
