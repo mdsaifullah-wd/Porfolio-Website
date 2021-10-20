@@ -165,6 +165,31 @@
   }
 }
 
+#about {
+  &-a {
+    padding: 3rem 0 0 0;
+    .about-content {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      grid-gap: 1.5rem;
+      .info {
+        background: $light-color;
+        border-left: $main-color 3px solid;
+      }
+    }
+  }
+  &-b {
+    .awards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      .fas {
+        color: $main-color;
+        margin-bottom: 1rem;
+      }
+    }
+  }
+}
+
 #footer {
   background: $dark-color;
   color: #fff;

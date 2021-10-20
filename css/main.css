@@ -335,6 +335,35 @@ h4 {
   transition: all 1s;
 }
 
+#about-a {
+  padding: 3rem 0 0 0;
+}
+
+#about-a .about-content {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 2fr;
+      grid-template-columns: 1fr 2fr;
+  grid-gap: 1.5rem;
+}
+
+#about-a .about-content .info {
+  background: #f4f4f4;
+  border-left: #ffbc00 3px solid;
+}
+
+#about-b .awards {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+}
+
+#about-b .awards .fas {
+  color: #ffbc00;
+  margin-bottom: 1rem;
+}
+
 #footer {
   background: #333;
   color: #fff;
