@@ -190,6 +190,52 @@ h4 {
   margin-top: 20%;
 }
 
+#header-about {
+  background: url("../img/showcase.jpg") center top/cover;
+  height: 100%;
+  border-bottom: #ffbc00 3px solid;
+}
+
+#header-about #nav-bar {
+  padding-top: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#header-about #nav-bar a {
+  color: #fff;
+}
+
+#header-about #nav-bar img {
+  width: 70px;
+}
+
+#header-about #nav-bar li {
+  display: inline-block;
+  padding: 1rem 1.5rem;
+}
+
+#header-about #nav-bar li a {
+  display: inline-block;
+  text-transform: uppercase;
+  padding-bottom: 0.5rem;
+  border-bottom: 3px transparent solid;
+  -webkit-transition: border-color 0.5s;
+  transition: border-color 0.5s;
+}
+
+#header-about #nav-bar li a:hover {
+  border-color: #ccc;
+}
+
+#header-about #nav-bar li a.current {
+  border-color: #ffbc00;
+}
+
 #home-a {
   color: #333;
 }

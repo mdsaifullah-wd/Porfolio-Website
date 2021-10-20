@@ -45,6 +45,41 @@
       margin-top: 20%;
     }
   }
+  &-about {
+    background: url("../img/showcase.jpg") center top/cover;
+    height: 100%;
+    border-bottom: $main-color 3px solid;
+    #nav-bar {
+      padding-top: 1rem;
+      display: flex;
+      justify-content: space-between;
+
+      a {
+        color: #fff;
+      }
+      img {
+        width: 70px;
+      }
+
+      li {
+        display: inline-block;
+        padding: 1rem 1.5rem;
+        a {
+          display: inline-block;
+          text-transform: uppercase;
+          padding-bottom: 0.5rem;
+          border-bottom: 3px transparent solid;
+          transition: border-color 0.5s;
+          &:hover {
+            border-color: $medium-color;
+          }
+          &.current {
+            border-color: $main-color;
+          }
+        }
+      }
+    }
+  }
 }
 
 #home {
