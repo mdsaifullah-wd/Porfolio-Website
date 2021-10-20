@@ -50,20 +50,82 @@
 #home {
   &-a {
     color: $dark-color;
-    .bottom-line {
-      background: $main-color;
-      width: 3rem;
-      height: 2px;
-      margin: 1rem auto;
-    }
     .specials {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
       grid-gap: 1rem;
-      padding: 1rem 0;
+      margin-top: 3rem;
     }
     .fas {
       color: $main-color;
+      padding-bottom: 0.4rem;
+    }
+  }
+  &-b {
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      div {
+        padding: 3rem 0;
+        &:nth-child(odd) {
+          background: $light-color;
+        }
+        &:nth-child(even) {
+          background: $medium-color;
+        }
+        li {
+          line-height: 2;
+          &.stats-title {
+            font-size: 1.5rem;
+          }
+          &.stats-number {
+            font-size: 2rem;
+            font-weight: bold;
+          }
+        }
+      }
+    }
+  }
+  &-c {
+    .process {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-gap: 1.5rem;
+      margin-top: 4rem;
+      &-icon {
+        color: #fff;
+        background: $dark-color;
+        height: 70px;
+        width: 70px;
+        line-height: 70px;
+        padding: 2rem;
+        border-radius: 50%;
+        position: relative;
+        transition: all 1s;
+        &:hover {
+          background: $main-color;
+          height: 90px;
+          width: 90px;
+          line-height: 90px;
+          .process-step {
+            background: $dark-color;
+          }
+        }
+      }
+      &-step {
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 15px;
+        width: 15px;
+        background: $main-color;
+        color: #fff;
+        font-size: 28px;
+        padding: 1rem;
+        border-radius: 50%;
+        line-height: 15px;
+        transition: all 1s;
+      }
     }
   }
 }
