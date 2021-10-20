@@ -190,13 +190,12 @@ h4 {
   margin-top: 20%;
 }
 
-#header-about {
-  background: url("../img/showcase.jpg") center top/cover;
-  height: 100%;
+#header-inner {
+  background: url("../img/showcase.jpg") 20% 30%/cover;
   border-bottom: #ffbc00 3px solid;
 }
 
-#header-about #nav-bar {
+#header-inner #nav-bar {
   padding-top: 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -206,20 +205,20 @@ h4 {
           justify-content: space-between;
 }
 
-#header-about #nav-bar a {
+#header-inner #nav-bar a {
   color: #fff;
 }
 
-#header-about #nav-bar img {
+#header-inner #nav-bar img {
   width: 70px;
 }
 
-#header-about #nav-bar li {
+#header-inner #nav-bar li {
   display: inline-block;
   padding: 1rem 1.5rem;
 }
 
-#header-about #nav-bar li a {
+#header-inner #nav-bar li a {
   display: inline-block;
   text-transform: uppercase;
   padding-bottom: 0.5rem;
@@ -228,11 +227,11 @@ h4 {
   transition: border-color 0.5s;
 }
 
-#header-about #nav-bar li a:hover {
+#header-inner #nav-bar li a:hover {
   border-color: #ccc;
 }
 
-#header-about #nav-bar li a.current {
+#header-inner #nav-bar li a.current {
   border-color: #ffbc00;
 }
 
