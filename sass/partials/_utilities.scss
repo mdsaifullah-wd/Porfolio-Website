@@ -45,7 +45,7 @@
     color: set-text-color($main-color);
   }
   &-dark {
-    background: $dark-dark;
+    background: $dark-color;
     color: set-text-color($dark-color);
   }
   &-medium {
@@ -121,4 +121,5 @@
   font-size: 2rem;
   padding-bottom: 0.5rem;
   font-weight: 100;
+  text-align: center;
 }
