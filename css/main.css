@@ -399,6 +399,14 @@ h4 {
   height: 100%;
 }
 
+#about-d .about-logo {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  grid-gap: 5rem;
+}
+
 #footer {
   background: #333;
   color: #fff;
