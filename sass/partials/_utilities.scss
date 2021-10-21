@@ -60,6 +60,7 @@
 .lead {
   font-size: 1.3rem;
   margin-bottom: 2rem;
+  text-align: center;
 }
 
 .text-center {
@@ -79,6 +80,20 @@
   }
   &-4 {
     padding: 4rem 0;
+  }
+}
+.p {
+  &-1 {
+    padding: 1rem;
+  }
+  &-2 {
+    padding: 2rem;
+  }
+  &-3 {
+    padding: 3rem;
+  }
+  &-4 {
+    padding: 4rem;
   }
 }
 

@@ -209,6 +209,29 @@
       grid-gap: 5rem;
     }
   }
+  &-e {
+    .testimonials {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-gap: 0.5rem;
+      .comment {
+        border: $medium-color 1px solid;
+        border-radius: 5px;
+        padding: 0.5rem;
+      }
+      .author {
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        margin-top: 1rem;
+        .author-img {
+          width: 50px;
+          border-radius: 50%;
+          margin-right: 0.5rem;
+        }
+      }
+    }
+  }
 }
 
 #footer {
