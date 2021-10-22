@@ -550,8 +550,13 @@ h4 {
   height: 100px;
 }
 
+#contact-a form .recaptcha {
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
 #contact-a form button[type="submit"] {
-  margin: 100px 0 0 0;
+  margin: 2rem 0 0 0;
   width: 50%;
   padding: 0.75rem 0;
 }
