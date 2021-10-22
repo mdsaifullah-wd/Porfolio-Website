@@ -551,8 +551,8 @@ h4 {
 }
 
 #contact-a form .recaptcha {
-  -ms-flex-line-pack: center;
-      align-content: center;
+  display: block;
+  margin: 0 auto;
 }
 
 #contact-a form button[type="submit"] {
