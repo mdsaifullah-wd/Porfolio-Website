@@ -559,6 +559,48 @@ h4 {
           transform: translateY(0);
 }
 
+#contact-a form .text-fields {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1rem;
+}
+
+#contact-a form .text-fields .text-input {
+  padding: 0.5rem 1rem;
+}
+
+#contact-a form .text-fields textarea {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1 / span 2;
+  height: 100px;
+}
+
+#contact-a form button[type="submit"] {
+  margin: 100px 0 0 0;
+  width: 50%;
+  padding: 0.75rem 0;
+}
+
+#contact-b .contact-address {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+}
+
+#contact-b .contact-address .fas {
+  color: #fff;
+  margin-bottom: 0.5rem;
+}
+
+#contact-c p {
+  font-size: 4rem;
+  font-weight: bold;
+}
+
 #footer {
   background: #333;
   color: #fff;
