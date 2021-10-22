@@ -358,35 +358,33 @@
           height: 100px;
         }
       }
-      
-      }
-      button[type="submit"] {
-        margin: 2rem 0 0 0;
-        width: 50%;
-        padding: 0.75rem 0;
-      }
+    }
+    button[type="submit"] {
+      margin: 2rem 0 0 0;
+      width: 50%;
+      padding: 0.75rem 0;
     }
   }
+}
 
-  // Section B
-  &-b {
-    .contact-address {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
+// Section B
+&-b {
+  .contact-address {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
 
-      .fas {
-        color: set-text-color($dark-color);
-        margin-bottom: 0.5rem;
-      }
+    .fas {
+      color: set-text-color($dark-color);
+      margin-bottom: 0.5rem;
     }
   }
+}
 
-  // Section C
-  &-c {
-    p {
-      font-size: 4rem;
-      font-weight: bold;
-    }
+// Section C
+&-c {
+  p {
+    font-size: 4rem;
+    font-weight: bold;
   }
 }
 
