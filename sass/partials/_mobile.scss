@@ -1,8 +1,10 @@
 // Tablet & Smaller Devices
+// ............................................
 @media (max-width: 800px) {
   // Header Section
   #header-home {
     height: 50vh;
+
     #header-content {
       height: 40vh;
     }
@@ -15,6 +17,7 @@
         &-category {
           font-size: 0.8rem;
         }
+
         &-title {
           font-size: 1.5rem;
         }
@@ -31,6 +34,7 @@
 }
 
 // Smartphones
+// ............................................
 @media (max-width: 500px) {
   // Utilities
   .l-heading {
@@ -49,6 +53,7 @@
   #contact-b .contact-address {
     grid-template-columns: 1fr;
   }
+
   #contact-a form .text-fields textarea {
     grid-column: 1;
   }
@@ -58,6 +63,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
     li {
       padding: 1rem 0.8rem;
     }
@@ -66,17 +72,22 @@
   #header-home {
     height: 100vh;
     background-position-x: 40%;
+
     #header-content {
       height: 80vh;
     }
   }
+
   // Home Page
   #home {
+    // Section A
     &-a {
       .specials div {
         @include stack-grid-separator($light-color);
       }
     }
+
+    // Section B
     &-b {
       .stats div {
         padding: 2rem 0 1rem 0;
@@ -86,11 +97,13 @@
 
   // About Page
   #about {
+    // Section A
     &-b {
       .awards div {
         @include stack-grid-separator($light-color);
       }
     }
+    // Section D
     &-d {
       display: none;
     }
@@ -98,19 +111,24 @@
 
   // Contact Page
   #contact {
+    // Section B
     &-b .contact-address div {
       @include stack-grid-separator(#444);
     }
+
+    // Section C
     &-c p {
       font-size: 2rem;
     }
   }
 
   // Footer Section
+  // ............................................
   #footer {
     .footer-content {
       flex-direction: column;
     }
+
     .social-links {
       margin-top: 1rem;
     }
@@ -122,6 +140,9 @@
     padding: 1rem 0.5rem;
   }
 }
+
+// Landscape
+// ............................................
 @media (max-height: 500px) {
   // Utilities
   .l-heading {
@@ -131,6 +152,7 @@
   // Header Section
   #header-home {
     height: 100vh;
+
     #header-content {
       height: 80vh;
     }

@@ -1,3 +1,4 @@
+// Container
 .container {
   max-width: $website-width;
   padding: 0 1.5rem;
@@ -5,6 +6,7 @@
   overflow: hidden;
 }
 
+// Buttons
 %btn-shared {
   display: inline-block;
   padding: 0.8rem 2rem;
@@ -18,51 +20,64 @@
     @extend %btn-shared;
     background: $main-color;
     color: $dark-color;
+
     &:hover {
       background: $main-color;
     }
   }
+
   &-light {
     @extend %btn-shared;
     background: $light-color;
     color: $dark-color;
+
     &:hover {
       background: $main-color;
     }
   }
+
   &-dark {
     @extend %btn-shared;
     background: $dark-color;
     color: $light-color;
+
     &:hover {
       background: $main-color;
     }
   }
 }
+
+// Background Color
 .bg {
   &-main {
     background: $main-color;
     color: set-text-color($main-color);
   }
+
   &-dark {
     background: $dark-color;
     color: set-text-color($dark-color);
   }
+
   &-medium {
     background: $medium-color;
     color: set-text-color($medium-color);
   }
+
   &-light {
     background: $light-color;
     color: set-text-color($light-color);
   }
 }
+
+// Lead Description
 .lead {
   font-size: 1.3rem;
   margin-bottom: 2rem;
   text-align: center;
 }
 
+// Text center
 .text-center {
   text-align: center;
 }
@@ -82,6 +97,7 @@
     padding: 4rem 0;
   }
 }
+
 .p {
   &-1 {
     padding: 1rem;
@@ -125,6 +141,7 @@
   line-height: 1.2;
 }
 
+// Bottom Line
 .bottom-line {
   background: $main-color;
   width: 3rem;
@@ -132,6 +149,7 @@
   margin: 0 auto 1rem auto;
 }
 
+// Section Title
 .section-title {
   font-size: 2rem;
   padding-bottom: 0.5rem;
