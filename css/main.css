@@ -177,14 +177,7 @@ h4 {
   text-transform: uppercase;
 }
 
-#header-home {
-  background: #333;
-  background: url("../img/showcase.jpg") no-repeat center center/cover;
-  color: #fff;
-  height: 100vh;
-}
-
-#header-home #nav-bar {
+#nav-bar {
   padding-top: 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -194,20 +187,20 @@ h4 {
           justify-content: space-between;
 }
 
-#header-home #nav-bar a {
+#nav-bar a {
   color: #fff;
 }
 
-#header-home #nav-bar img {
+#nav-bar img {
   width: 70px;
 }
 
-#header-home #nav-bar li {
+#nav-bar li {
   display: inline-block;
   padding: 1rem 1.5rem;
 }
 
-#header-home #nav-bar li a {
+#nav-bar li a {
   display: inline-block;
   text-transform: uppercase;
   padding-bottom: 0.5rem;
@@ -216,12 +209,20 @@ h4 {
   transition: border-color 0.5s;
 }
 
-#header-home #nav-bar li a:hover {
+#nav-bar li a:hover {
   border-color: #ccc;
 }
 
-#header-home #nav-bar li a.current {
+#nav-bar li a.current {
   border-color: #ffbc00;
+}
+
+#header-home {
+  background: #333;
+  background: url("../img/showcase.jpg") no-repeat center center/cover;
+  color: #fff;
+  height: 100vh;
+  overflow: hidden;
 }
 
 #header-home #header-content {
@@ -231,46 +232,6 @@ h4 {
 #header-inner {
   background: url("../img/showcase.jpg") 20% 30%/cover;
   border-bottom: #ffbc00 3px solid;
-}
-
-#header-inner #nav-bar {
-  padding-top: 1rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-#header-inner #nav-bar a {
-  color: #fff;
-}
-
-#header-inner #nav-bar img {
-  width: 70px;
-}
-
-#header-inner #nav-bar li {
-  display: inline-block;
-  padding: 1rem 1.5rem;
-}
-
-#header-inner #nav-bar li a {
-  display: inline-block;
-  text-transform: uppercase;
-  padding-bottom: 0.5rem;
-  border-bottom: 3px transparent solid;
-  -webkit-transition: border-color 0.5s;
-  transition: border-color 0.5s;
-}
-
-#header-inner #nav-bar li a:hover {
-  border-color: #ccc;
-}
-
-#header-inner #nav-bar li a.current {
-  border-color: #ffbc00;
 }
 
 #home-a {
@@ -632,4 +593,108 @@ h4 {
 
 #footer .social-links .fab:hover {
   background: #ffbc00;
+}
+
+@media (max-width: 800px) {
+  #header-home {
+    height: 30rem;
+  }
+  #header-home #header-content {
+    margin-top: 5rem;
+  }
+  #work-a .item-text-category {
+    font-size: 0.8rem;
+  }
+  #work-a .item-text-title {
+    font-size: 1.5rem;
+  }
+  #contact-c p {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .l-heading {
+    font-size: 3rem;
+  }
+  #home-a .specials,
+  #home-b .stats,
+  #home-c .process,
+  #about-a .about-content,
+  #about-b .awards,
+  #about-e .testimonials,
+  #work-a .items,
+  #contact-a form .text-fields,
+  #contact-b .contact-address {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  #contact-a form .text-fields textarea {
+    -ms-grid-column: 1;
+    grid-column: 1;
+  }
+  #nav-bar {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #nav-bar li {
+    padding: 0.8rem;
+  }
+  #header-home {
+    height: 100vh;
+    background-position-x: 40%;
+  }
+  #header-home #header-content {
+    margin-top: 30%;
+  }
+  #home-a .specials div {
+    border-bottom: 1px #ccc solid;
+    padding-bottom: 1rem;
+  }
+  #home-a .specials div:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+  #home-b .stats div {
+    padding: 2rem 0 1rem 0;
+  }
+  #about-b .awards div {
+    border-bottom: 1px #ccc solid;
+    padding-bottom: 1rem;
+  }
+  #about-b .awards div:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+  #about-d {
+    display: none;
+  }
+  #contact-b .contact-address div {
+    border-bottom: 1px #444 solid;
+    padding-bottom: 1rem;
+  }
+  #contact-b .contact-address div:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+  #contact-c p {
+    font-size: 2rem;
+  }
+  #footer .footer-content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #footer .social-links {
+    margin-top: 1rem;
+  }
 }

@@ -1,0 +1,118 @@
+// Tablet & Smaller Devices
+@media (max-width: 800px) {
+  // Header Section
+  #header-home {
+    height: 30rem;
+    #header-content {
+      margin-top: 5rem;
+    }
+  }
+
+  // Work Page
+  #work-a {
+    .item {
+      &-text {
+        &-category {
+          font-size: 0.8rem;
+        }
+        &-title {
+          font-size: 1.5rem;
+        }
+      }
+    }
+  }
+
+  // Contact Page
+  #contact-c {
+    p {
+      font-size: 3rem;
+    }
+  }
+}
+
+// Smartphones
+@media (max-width: 500px) {
+  // Utilities
+  .l-heading {
+    font-size: 3rem;
+  }
+
+  // Stack Grids
+  #home-a .specials,
+  #home-b .stats,
+  #home-c .process,
+  #about-a .about-content,
+  #about-b .awards,
+  #about-e .testimonials,
+  #work-a .items,
+  #contact-a form .text-fields,
+  #contact-b .contact-address {
+    grid-template-columns: 1fr;
+  }
+  #contact-a form .text-fields textarea {
+    grid-column: 1;
+  }
+
+  // Header Section
+  #nav-bar {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    li {
+      padding: 0.8rem;
+    }
+  }
+
+  #header-home {
+    height: 100vh;
+    background-position-x: 40%;
+    #header-content {
+      margin-top: 30%;
+    }
+  }
+  // Home Page
+  #home {
+    &-a {
+      .specials div {
+        @include stack-grid-separator($medium-color);
+      }
+    }
+    &-b {
+      .stats div {
+        padding: 2rem 0 1rem 0;
+      }
+    }
+  }
+
+  // About Page
+  #about {
+    &-b {
+      .awards div {
+        @include stack-grid-separator($medium-color);
+      }
+    }
+    &-d {
+      display: none;
+    }
+  }
+
+  // Contact Page
+  #contact {
+    &-b .contact-address div {
+      @include stack-grid-separator(#444);
+    }
+    &-c p {
+      font-size: 2rem;
+    }
+  }
+
+  // Footer Section
+  #footer {
+    .footer-content {
+      flex-direction: column;
+    }
+    .social-links {
+      margin-top: 1rem;
+    }
+  }
+}

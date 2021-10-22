@@ -5,42 +5,47 @@
 @import "partials/utilities";
 @import "partials/generals";
 
+// Header Section
+
+#nav-bar {
+  padding-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+
+  a {
+    color: #fff;
+  }
+  img {
+    width: 70px;
+  }
+
+  li {
+    display: inline-block;
+    padding: 1rem 1.5rem;
+    a {
+      display: inline-block;
+      text-transform: uppercase;
+      padding-bottom: 0.5rem;
+      border-bottom: 3px transparent solid;
+      transition: border-color 0.5s;
+      &:hover {
+        border-color: $medium-color;
+      }
+      &.current {
+        border-color: $main-color;
+      }
+    }
+  }
+}
+
 #header {
   &-home {
     background: $dark-color;
     background: url("../img/showcase.jpg") no-repeat center center/cover;
     color: #fff;
     height: 100vh;
-    #nav-bar {
-      padding-top: 1rem;
-      display: flex;
-      justify-content: space-between;
+    overflow: hidden;
 
-      a {
-        color: #fff;
-      }
-      img {
-        width: 70px;
-      }
-
-      li {
-        display: inline-block;
-        padding: 1rem 1.5rem;
-        a {
-          display: inline-block;
-          text-transform: uppercase;
-          padding-bottom: 0.5rem;
-          border-bottom: 3px transparent solid;
-          transition: border-color 0.5s;
-          &:hover {
-            border-color: $medium-color;
-          }
-          &.current {
-            border-color: $main-color;
-          }
-        }
-      }
-    }
     #header-content {
       margin-top: 20%;
     }
@@ -48,36 +53,6 @@
   &-inner {
     background: url("../img/showcase.jpg") 20% 30% / cover;
     border-bottom: $main-color 3px solid;
-    #nav-bar {
-      padding-top: 1rem;
-      display: flex;
-      justify-content: space-between;
-
-      a {
-        color: #fff;
-      }
-      img {
-        width: 70px;
-      }
-
-      li {
-        display: inline-block;
-        padding: 1rem 1.5rem;
-        a {
-          display: inline-block;
-          text-transform: uppercase;
-          padding-bottom: 0.5rem;
-          border-bottom: 3px transparent solid;
-          transition: border-color 0.5s;
-          &:hover {
-            border-color: $medium-color;
-          }
-          &.current {
-            border-color: $main-color;
-          }
-        }
-      }
-    }
   }
 }
 
@@ -367,3 +342,6 @@
     }
   }
 }
+
+// Media Queries
+@import "partials/mobile";
