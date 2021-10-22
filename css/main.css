@@ -537,6 +537,7 @@ h4 {
   -ms-grid-columns: (1fr)[2];
       grid-template-columns: repeat(2, 1fr);
   grid-gap: 1rem;
+  width: 100%;
 }
 
 #contact-a form .text-fields .text-input {

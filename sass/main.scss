@@ -347,6 +347,7 @@
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 1rem;
+        width: 100%;
 
         .text-input {
           padding: 0.5rem 1rem;
