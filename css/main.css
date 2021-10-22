@@ -553,7 +553,7 @@ h4 {
 
 #contact-a form .recaptcha {
   display: block;
-  margin: 0 auto;
+  margin: 2rem auto;
 }
 
 #contact-a form button[type="submit"] {
